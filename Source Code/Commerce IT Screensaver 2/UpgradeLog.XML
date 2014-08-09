@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Simple Screensaver">
+</Property><Property Name="Solution File" Value="Q:\Work Projects\Simple Screensaver - 07 October 2004\Source Code\Simple Screensaver\Simple Screensaver.sln">
+</Property><Property Name="Date" Value="22 January 2008">
+</Property><Property Name="Time" Value="13:10 PM">
+</Property></Properties><Event ErrorLevel="0" Project="Simple Screensaver" Source="Simple Screensaver.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Simple Screensaver" Source="Simple Screensaver.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Simple Screensaver.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Simple Screensaver.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Simple Screensaver" Source="app.config" Description="File converted successfully. All &lt;supportedRuntime&gt; and &lt;requiredRuntime&gt; tags were removed to enable the project to build and run with Visual Studio 2005.">
+</Event><Event ErrorLevel="3" Project="Simple Screensaver" Source="app.config" Description="Converted">
+</Event></UpgradeLog>

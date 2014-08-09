@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT type="Advanced Installer" version="1.9" modules="professional" RootPath=".">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="ProductCode" Value="{AB4DB7DD-520C-4073-BF7C-E2BF71D6A0BA}"/>
+    <ROW Property="ALLUSERS" Value="2"/>
+    <ROW Property="ARPPRODUCTICON" Value="controlPanelIcon.exe"/>
+    <ROW Property="BannerBitmap" Value="installer_background.jpg"/>
+    <ROW Property="DialogBitmap" Value="installer_background_dialog.jpg"/>
+    <ROW Property="Manufacturer" Value="CodeUnit"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductVersion" Value="1.0.0"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{B3976122-855E-462E-BBA7-5CAE7F86DBE9}"/>
+    <ROW Property="ProductName" Value="Commerce IT Screensaver 2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" Directory_Parent="" DefaultDir="SourceDir"/>
+    <ROW Directory="WindowsFolder" Directory_Parent="TARGETDIR" DefaultDir="Window~1|WindowsFolder" IsPseudoRoot="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AutoUpdate.exe" ComponentId="{7D86B479-5FFA-4857-8D11-01B291AAF4E0}" Directory_="WindowsFolder" Attributes="0" Condition="" KeyPath="AutoUpdate.exe" FullKeyPath="WindowsFolder\AutoUpdate.exe"/>
+    <ROW Component="Commerce_IT_Screensaver_2.swf" ComponentId="{F5CF972A-1FE8-4E3E-9E16-D2E48919AB9A}" Directory_="WindowsFolder" Attributes="0" Condition="" KeyPath="Commerce_IT_Screensaver_2.swf" FullKeyPath="WindowsFolder"/>
+    <ROW Component="Interop.ShockwaveFlashObjects.dll" ComponentId="{07A8E1F9-7292-4F7E-BA10-D4AFE3496CB2}" Directory_="WindowsFolder" Attributes="0" Condition="" KeyPath="Interop.ShockwaveFlashObjects.dll" FullKeyPath="WindowsFolder\Interop.ShockwaveFlashObjects.dll"/>
+    <ROW Component="AxInterop.ShockwaveFlashObjects.dll" ComponentId="{0138511D-E4B9-4916-ABF2-F020D6D769F9}" Directory_="WindowsFolder" Attributes="0" Condition="" KeyPath="AxInterop.ShockwaveFlashObjects.dll" FullKeyPath="WindowsFolder\AxInterop.ShockwaveFlashObjects.dll"/>
+    <ROW Component="za.exe" ComponentId="{7D53463C-14CD-45A6-8D4D-D52FF708270A}" Directory_="WindowsFolder" Attributes="0" Condition="" KeyPath="za.exe" FullKeyPath="WindowsFolder\7za.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Feature_Parent="" Title="MainFeature" Description="Description" Display="2" Level="1" Directory_="TARGETDIR" Attributes="0" Components="AxInterop.ShockwaveFlashObjects.dll Commerce_IT_Screensaver_2.swf Interop.ShockwaveFlashObjects.dll za.exe AutoUpdate.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="AutoUpdate.exe" Component_="AutoUpdate.exe" FileName="AutoUp~1.exe|AutoUpdate.exe" Version="" Language="" Attributes="" SourcePath="..\Commerce IT Screensaver 2\Required Files\AutoUpdate.exe" SelfReg="false"/>
+    <ROW File="Commerce_IT_Screensaver_2.scr" Component_="Commerce_IT_Screensaver_2.swf" FileName="Commer~1.scr|Commerce IT Screensaver 2.scr" Version="" Language="" Attributes="" SourcePath="..\Commerce IT Screensaver 2\Required Files\Commerce IT Screensaver 2.scr" SelfReg="false"/>
+    <ROW File="Commerce_IT_Screensaver_2.swf" Component_="Commerce_IT_Screensaver_2.swf" FileName="Commer~1.swf|Commerce IT Screensaver 2.swf" Version="" Language="" Attributes="" SourcePath="..\Commerce IT Screensaver 2\Required Files\Commerce IT Screensaver 2.swf" SelfReg="false"/>
+    <ROW File="Interop.ShockwaveFlashObjects.dll" Component_="Interop.ShockwaveFlashObjects.dll" FileName="Intero~1.dll|Interop.ShockwaveFlashObjects.dll" Version="" Language="" Attributes="" SourcePath="..\Commerce IT Screensaver 2\Required Files\Interop.ShockwaveFlashObjects.dll" SelfReg="false"/>
+    <ROW File="config.aup" Component_="Commerce_IT_Screensaver_2.swf" FileName="config.aup" Version="" Language="" Attributes="" SourcePath="..\Commerce IT Screensaver 2\Required Files\config.aup" SelfReg="false"/>
+    <ROW File="AxInterop.ShockwaveFlashObjects.dll" Component_="AxInterop.ShockwaveFlashObjects.dll" FileName="AxInte~1.dll|AxInterop.ShockwaveFlashObjects.dll" Version="" Language="" Attributes="" SourcePath="..\Commerce IT Screensaver 2\Required Files\AxInterop.ShockwaveFlashObjects.dll" SelfReg="false"/>
+    <ROW File="za.exe" Component_="za.exe" FileName="7za.exe" Version="" Language="" Attributes="" SourcePath="..\Commerce IT Screensaver 2\Required Files\7za.exe" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Source="" Target="A higher version of [ProductName] is installed."/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_TARGETDIR" Type="307" Source="TARGETDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="UpgradeCode" VersionMin="" VersionMax="ProductVersion" Language="" Attributes="1025" Remove=""/>
+    <ROW UpgradeCode="UpgradeCode" VersionMin="ProductVersion" VersionMax="" Language="" Attributes="2" Remove=""/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiMergeModsComponent">
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="Uninstall_Commerce_IT_Screensaver_2" Directory_="SHORTCUTDIR" Name="Uninst~1|Uninstall Commerce IT Screensaver 2" Component_="AutoUpdate.exe" Target="[SystemFolder]msiexec.exe" Arguments="/x [ProductCode]" Description="Uninstall" Hotkey="0" Icon_="SystemFolder_msiexec.exe" IconIndex="0" ShowCmd="1" WkDir=""/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="SystemFolder_msiexec.exe" SourcePath="&lt;uninstall.ico&gt;" Index="0"/>
+    <ROW Name="controlPanelIcon.exe" SourcePath="Images\Application_Icon.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="installer_background.jpg" SourcePath="Images\installer_background.jpg"/>
+    <ROW Name="installer_background_dialog.jpg" SourcePath="Images\installer_background_dialog.jpg"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ATTRIBUTE name="Start" value="WelcomeDlg FolderDlg VerifyReadyDlg"/>
+    <ATTRIBUTE name="Progress" value="ProgressDlg"/>
+    <ATTRIBUTE name="End" value="ExitDialog"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.PreReqComponent">
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiMediaComponent">
+    <ATTRIBUTE name="InstallationType" value="1"/>
+    <ATTRIBUTE name="MediaSize" value="0"/>
+    <ATTRIBUTE name="Compress" value="1"/>
+    <ATTRIBUTE name="Package" value="10"/>
+    <ATTRIBUTE name="PackageName" value="Release\Commerce IT Screensaver 2 Installer"/>
+    <ATTRIBUTE name="IconPath" value="Images\Application_Icon.ico?0"/>
+  </COMPONENT>
+</DOCUMENT>
